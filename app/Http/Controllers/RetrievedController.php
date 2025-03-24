@@ -42,6 +42,10 @@ class RetrievedController extends Controller
             }
         }
 
-        return $mapCustomers;
+        return [
+            "status"    => 1,
+            "message"   => "Data Successfully Retrieved.",
+            "data"      => $mapCustomers
+        ];
     }
 }
